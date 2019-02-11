@@ -5,5 +5,10 @@ app-music {
   }
   .music-container {
     justify-content: space-around;
+    opacity: 0;
+    transition: opacity 1s;
+    &.visible {
+      opacity: 1;
+    }
   }
 }
