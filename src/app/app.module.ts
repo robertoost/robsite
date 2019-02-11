@@ -7,11 +7,10 @@ import { AppComponent } from './app.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MusicComponent } from './pages/music/music.component';
-import { MusicPlaylistsComponent } from './pages/music-playlists/music-playlists.component';
-import { MusicOriginalComponent } from './pages/music-original/music-original.component';
 import { AppRoutes } from './app-routing.module';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { PageContainerComponent } from './shared/components/page-container/page-container.component';
+import { PlaylistComponent } from './pages/music/playlist/playlist.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +18,9 @@ import { PageContainerComponent } from './shared/components/page-container/page-
     NavigatorComponent,
     HomeComponent,
     MusicComponent,
-    MusicPlaylistsComponent,
-    MusicOriginalComponent,
     ButtonComponent,
-    PageContainerComponent
+    PageContainerComponent,
+    PlaylistComponent
   ],
   imports: [
     BrowserModule,
