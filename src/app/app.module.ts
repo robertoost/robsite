@@ -11,6 +11,9 @@ import { AppRoutes } from './app-routing.module';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { PageContainerComponent } from './shared/components/page-container/page-container.component';
 import { PlaylistComponent } from './pages/music/playlist/playlist.component';
+import { ArtComponent } from './pages/art/art.component';
+import { GamesComponent } from './pages/games/games.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { PlaylistComponent } from './pages/music/playlist/playlist.component';
     MusicComponent,
     ButtonComponent,
     PageContainerComponent,
-    PlaylistComponent
+    PlaylistComponent,
+    ArtComponent,
+    GamesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
