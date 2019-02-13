@@ -1,8 +1,10 @@
-app-music {
+app-music app-page-container {
+  flex-direction: column;
 
-  app-page-container {
-    flex-direction: column;
+  h1 {
+    margin-bottom: 4rem;
   }
+
   .music-container {
     justify-content: space-around;
     opacity: 0;
