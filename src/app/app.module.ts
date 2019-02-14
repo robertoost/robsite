@@ -15,6 +15,7 @@ import { ArtComponent } from './pages/art/art.component';
 import { GamesComponent } from './pages/games/games.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MatToolbarModule } from '@angular/material';
+import { ValentinesComponent } from './pages/valentines/valentines.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatToolbarModule } from '@angular/material';
     PlaylistComponent,
     ArtComponent,
     GamesComponent,
-    ContactComponent
+    ContactComponent,
+    ValentinesComponent,
   ],
   imports: [
     BrowserModule,
