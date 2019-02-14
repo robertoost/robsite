@@ -14,6 +14,7 @@ import { PlaylistComponent } from './pages/music/playlist/playlist.component';
 import { ArtComponent } from './pages/art/art.component';
 import { GamesComponent } from './pages/games/games.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactComponent } from './pages/contact/contact.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot(AppRoutes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
