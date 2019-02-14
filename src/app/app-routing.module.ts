@@ -5,6 +5,7 @@ import { MusicComponent } from './pages/music/music.component';
 import { ArtComponent } from './pages/art/art.component';
 import { GamesComponent } from './pages/games/games.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ValentinesComponent } from './pages/valentines/valentines.component';
 
 export const AppRoutes: Routes = [
   {
@@ -29,6 +30,10 @@ export const AppRoutes: Routes = [
       path: 'contact',
       component: ContactComponent,
       data: { state: 'contact' }
+    }, {
+      path: 'valentines/:recipient',
+      component: ValentinesComponent,
+      data: { state: 'valentines' }
     } ]
   }
 ];
