@@ -1,5 +1,8 @@
 <mat-toolbar>
-  <app-button *ngFor="let page of pages" [class.active]="getState(o) === page" [routerLink]="[page]">
+  <app-button
+    *ngFor="let page of pages"
+    [class.active]="getState(o) === page"
+    [routerLink]="[page]">
     {{ page }}
   </app-button>
 </mat-toolbar>
