@@ -1,11 +1,18 @@
-<mat-toolbar>
-  <app-button
+<div class="toolbar">
+  <button
+    class="nav-button"
     *ngFor="let page of pages"
     [class.active]="getState(o) === page"
     [routerLink]="[page]">
     {{ page }}
-  </app-button>
-</mat-toolbar>
+  </button>
+  <button
+    class="nav-button"
+    *ngIf="getState(o) === 'valentines'"
+    [class.active]="getState(o) === 'valentines'">
+    {{ '\<\3' }}
+  </button>
+</div>
 <main [@routerTransition]="getState(o)">
   <router-outlet #o="outlet"></router-outlet>
 </main>
