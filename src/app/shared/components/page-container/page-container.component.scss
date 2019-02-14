@@ -3,13 +3,18 @@
   background-color: #202020;
   background-image: radial-gradient(10% 100% ellipse at bottom center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);
   display: flex;
-  height: calc( 100vh - 64px );
+  height: calc( 100vh - 57px );
   justify-content: center;
   margin: 0;
   padding: 0;
   transition: background-color 2s cubic-bezier(0.19, 1, 0.22, 1);
+  overflow-y: scroll;
   &.show {
-    background-color: #282828;
+    background-color: #696969;
+  }
+  &.vertical {
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 
