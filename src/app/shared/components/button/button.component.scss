@@ -63,4 +63,12 @@
       }
     }
   }
+
+  &.active .button {
+    background-color: #fff;
+
+    a {
+      color: #202020;
+    }
+  }
 }
