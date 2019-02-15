@@ -1,6 +1,13 @@
 <app-page-container class="vertical">
+  <ng-container *ngIf="message[0] !== ''">
     <h1>to: {{ recipient }}</h1>
     <span *ngFor="let msg of message">{{ msg }}</span>
     <img (mouseover)="lightBackground(true)" (mouseout)="lightBackground(false)" src="https://i.imgur.com/xWbI3cY.png">
     <span>from: Rob</span>
+  </ng-container>
+  <ng-container>
+    <h1>404</h1>
+    <img src="https://i.imgur.com/8FuUcvi.png">
+    <h1>No valentine found</h1>
+  </ng-container>
 </app-page-container>
