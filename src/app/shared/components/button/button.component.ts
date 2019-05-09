@@ -9,19 +9,19 @@ import { BackgroundStyleService } from '../../services/background-style.service'
 export class ButtonComponent implements OnInit {
   mouseover: boolean;
 
-  constructor( private backgroundStyle: BackgroundStyleService ) { }
+  constructor( private $backgroundStyle: BackgroundStyleService ) { }
 
   ngOnInit() {
   }
 
   @HostListener('mouseover')
   onMouseOver() {
-    this.backgroundStyle.toggleBackground( true );
+    this.$backgroundStyle.toggleBackground( true );
   }
 
   @HostListener('mouseout')
   onMouseOut() {
-    this.backgroundStyle.toggleBackground( false );
+    this.$backgroundStyle.toggleBackground( false );
   }
 
 }
