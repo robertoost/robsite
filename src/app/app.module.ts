@@ -16,6 +16,7 @@ import { GamesComponent } from './pages/games/games.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MatToolbarModule } from '@angular/material';
 import { ValentinesComponent } from './pages/valentines/valentines.component';
+import { WarriorComponent } from './pages/warrior/warrior.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ValentinesComponent } from './pages/valentines/valentines.component';
     GamesComponent,
     ContactComponent,
     ValentinesComponent,
+    WarriorComponent,
   ],
   imports: [
     BrowserModule,
