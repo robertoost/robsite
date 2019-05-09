@@ -6,6 +6,7 @@ import { ArtComponent } from './pages/art/art.component';
 import { GamesComponent } from './pages/games/games.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ValentinesComponent } from './pages/valentines/valentines.component';
+import { WarriorComponent } from './pages/warrior/warrior.component';
 
 export const AppRoutes: Routes = [
   {
@@ -34,7 +35,10 @@ export const AppRoutes: Routes = [
       path: 'valentines/:recipient',
       component: ValentinesComponent,
       data: { state: 'valentines' }
-    } ]
+    }, {
+      path: 'warrior/tiger',
+      component: WarriorComponent
+    }, ]
   }
 ];
 
